@@ -14,7 +14,7 @@ Add the following to `deno.json`:
 {
   "tasks": {
     "version": "deno run -Ar https://esm.sh/gh/dotellie/version@typescript-file/index.ts",
-    "bump-version": "deno run -A scripts/bump-version.ts"
+    "bump-version": "deno run -A https://esm.sh/gh/dotellie/deno-scripts/bump-version.ts"
   }
 }
 ```
