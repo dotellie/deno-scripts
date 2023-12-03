@@ -27,8 +27,6 @@ await exec(`git remote update`, { output: OutputMode.None });
 // Check if the local branch is behind the remote branch
 const isBehind = (await $(`git status -uno`)).includes("Your branch is behind");
 
-console.log(isBehind);
-
 if (isBehind) {
   console.error(
     "Your local branch is behind the remote branch. Please pull the latest changes first.",
